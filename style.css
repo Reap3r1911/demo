@@ -1,0 +1,101 @@
+html, body {
+    background-image: url(print.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.central_menu {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.autorisation {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 75%;
+    align-content: center;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    box-shadow: 0 0 20px 4px;
+    opacity: 0.95;
+}
+
+.login {
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: hidden;
+    grid-area: 2 / 1 / 2 / 4;
+    height: 65%;
+    margin: 0 10%;
+    padding: 0 3%;
+    background-color: #f1f1f1;
+    outline-style: inherit;
+    font-family: monospace;
+}
+
+.password {
+    font-size: 17px;
+    font-weight: bold;
+    grid-area: 3 / 1 / 4 / 4;
+    border-radius: 7px;
+    border: hidden;
+    height: 65%;
+    margin: 0 10%;
+    padding: 0 3%;
+    background-color: #f1f1f1;
+    outline-style: inherit;
+    font-family: monospace;
+}
+
+.log_window {
+    grid-area: 4 / 2 / 5 / 3;
+    position: relative;
+    padding: 0;
+}
+
+.button_log {
+    position: absolute;
+    right: 25%;
+    bottom: 25%;
+    left: 25%;
+    border: hidden;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    transition: background 1s ease, box-shadow 1s ease;
+    outline-style: inherit;
+    box-shadow: 0 0 2px 1px #f1f1f1;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+.title_log {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 0 15%;
+    width: 70%;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 5%;
+    font-family: monospace;
+}
+
+.button_log:hover {
+    background-color: lightpink;
+    box-shadow: 0 0 5px 5px #f1f1f1;
+}
